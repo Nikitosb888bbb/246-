@@ -1,9 +1,7 @@
-def calculate_tax():
-    Tax_rate=0.13
-    annual_income=float(input("Введите свой годовой налог: "))
-    tax_mount=annual_income*Tax_rate
-    net_income=annual_income-tax_mount
-    print(f'Общая сумма дохода {annual_income:.2f}')
-    print(f'Сумма расчитанного налога {tax_mount:.2f}')
-    print(f'Сумма "на руки" после вычета налога {net_income:.2f}')
-calculate_tax()
+salary=float(input("Введите Ваш доход: "))
+nalog=0.13
+tax=salary*nalog
+total_salary=salary-tax
+print(f'Коэфицент текущего налога: {nalog}')
+print(f'Сумма налога от заработанной суммы: {tax:.2f}')
+print(f'Ваш доход после вычесления налога равен: {total_salary:.2f}')

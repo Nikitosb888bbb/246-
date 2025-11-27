@@ -1,5 +1,3 @@
-def calculate_imt(): 
-    weight, height = map(float, input("Введите ваш вес (кг) и рост (м): ").split())
-    imt = weight/(height**2)
-    print(f'Ваше значение ИМТ равно {imt:.1f}')
-calculate_imt()
+weight,height=map(float,input('Введите ваш вес (в кг) и рост (в метрах): ').split())
+imt=weight/height**2
+print(f'Ваш ИМТ: {imt:.1f}')
